@@ -14,6 +14,7 @@
 		23A2B6711D239B510053C580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23A2B6701D239B510053C580 /* Assets.xcassets */; };
 		23A2B6741D239B510053C580 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A2B6721D239B510053C580 /* LaunchScreen.storyboard */; };
 		23A2B67C1D239BBC0053C580 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23A2B67B1D239BBC0053C580 /* GoogleService-Info.plist */; };
+		92713E87B5AD183D5ED0A503 /* Pods_quick9.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4AE6237D63392A563E3104 /* Pods_quick9.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		23A2B6731D239B510053C580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23A2B6751D239B510053C580 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23A2B67B1D239BBC0053C580 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		5572CF8B1CDDFE78A981F24E /* Pods-quick9.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quick9.release.xcconfig"; path = "Pods/Target Support Files/Pods-quick9/Pods-quick9.release.xcconfig"; sourceTree = "<group>"; };
+		91A375ABB85621E69EEF5584 /* Pods-quick9.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quick9.debug.xcconfig"; path = "Pods/Target Support Files/Pods-quick9/Pods-quick9.debug.xcconfig"; sourceTree = "<group>"; };
+		BA4AE6237D63392A563E3104 /* Pods_quick9.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quick9.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92713E87B5AD183D5ED0A503 /* Pods_quick9.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				23A2B6651D239B510053C580 /* quick9 */,
 				23A2B6641D239B510053C580 /* Products */,
+				2911D31584AA53D280A6A78E /* Pods */,
+				ECA12E935A356FAAD2331692 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +77,23 @@
 			path = quick9;
 			sourceTree = "<group>";
 		};
+		2911D31584AA53D280A6A78E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91A375ABB85621E69EEF5584 /* Pods-quick9.debug.xcconfig */,
+				5572CF8B1CDDFE78A981F24E /* Pods-quick9.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ECA12E935A356FAAD2331692 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA4AE6237D63392A563E3104 /* Pods_quick9.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23A2B6781D239B510053C580 /* Build configuration list for PBXNativeTarget "quick9" */;
 			buildPhases = (
+				A5CF575B64EB246F584A31AB /* [CP] Check Pods Manifest.lock */,
 				23A2B65F1D239B500053C580 /* Sources */,
 				23A2B6601D239B500053C580 /* Frameworks */,
 				23A2B6611D239B500053C580 /* Resources */,
+				88414D60947EFF9098AC1AB3 /* [CP] Embed Pods Frameworks */,
+				E211D9DE972BD1CB882315D9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,6 +163,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		88414D60947EFF9098AC1AB3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-quick9/Pods-quick9-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5CF575B64EB246F584A31AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E211D9DE972BD1CB882315D9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-quick9/Pods-quick9-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		23A2B65F1D239B500053C580 /* Sources */ = {
@@ -257,6 +332,7 @@
 		};
 		23A2B6791D239B510053C580 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91A375ABB85621E69EEF5584 /* Pods-quick9.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = quick9/Info.plist;
@@ -268,6 +344,7 @@
 		};
 		23A2B67A1D239B510053C580 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5572CF8B1CDDFE78A981F24E /* Pods-quick9.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = quick9/Info.plist;
@@ -296,6 +373,7 @@
 				23A2B67A1D239B510053C580 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
