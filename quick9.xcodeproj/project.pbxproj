@@ -13,6 +13,7 @@
 		23A2B66F1D239B510053C580 /* quick9.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 23A2B66D1D239B510053C580 /* quick9.xcdatamodeld */; };
 		23A2B6711D239B510053C580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23A2B6701D239B510053C580 /* Assets.xcassets */; };
 		23A2B6741D239B510053C580 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A2B6721D239B510053C580 /* LaunchScreen.storyboard */; };
+		23A2B67C1D239BBC0053C580 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23A2B67B1D239BBC0053C580 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		23A2B6701D239B510053C580 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23A2B6731D239B510053C580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23A2B6751D239B510053C580 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23A2B67B1D239BBC0053C580 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +58,13 @@
 		23A2B6651D239B510053C580 /* quick9 */ = {
 			isa = PBXGroup;
 			children = (
-				23A2B6661D239B510053C580 /* AppDelegate.swift */,
 				23A2B6681D239B510053C580 /* ViewController.swift */,
 				23A2B66A1D239B510053C580 /* Main.storyboard */,
 				23A2B6701D239B510053C580 /* Assets.xcassets */,
+				23A2B6661D239B510053C580 /* AppDelegate.swift */,
 				23A2B6721D239B510053C580 /* LaunchScreen.storyboard */,
 				23A2B6751D239B510053C580 /* Info.plist */,
+				23A2B67B1D239BBC0053C580 /* GoogleService-Info.plist */,
 				23A2B66D1D239B510053C580 /* quick9.xcdatamodeld */,
 			);
 			path = quick9;
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23A2B6741D239B510053C580 /* LaunchScreen.storyboard in Resources */,
+				23A2B67C1D239BBC0053C580 /* GoogleService-Info.plist in Resources */,
 				23A2B6711D239B510053C580 /* Assets.xcassets in Resources */,
 				23A2B66C1D239B510053C580 /* Main.storyboard in Resources */,
 			);
