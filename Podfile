@@ -7,4 +7,5 @@ target 'quick9' do
 
   # Pods for quick9
   pod 'Firebase'
+  pod 'Alamofire', '~> 3.4'
 end
