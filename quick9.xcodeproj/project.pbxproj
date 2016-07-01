@@ -30,6 +30,7 @@
 		23A2B69D1D23B9EC0053C580 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A2B69A1D23B9EC0053C580 /* User.swift */; };
 		23A2B6A01D240D790053C580 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A2B69F1D240D790053C580 /* DataService.swift */; };
 		23A2B6A61D2660AE0053C580 /* MainEventTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A2B6A51D2660AE0053C580 /* MainEventTableVC.swift */; };
+		23A2B6AA1D2661800053C580 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A2B6A91D2661800053C580 /* EventTableViewCell.swift */; };
 		92713E87B5AD183D5ED0A503 /* Pods_quick9.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4AE6237D63392A563E3104 /* Pods_quick9.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		23A2B69A1D23B9EC0053C580 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		23A2B69F1D240D790053C580 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		23A2B6A51D2660AE0053C580 /* MainEventTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainEventTableVC.swift; sourceTree = "<group>"; };
+		23A2B6A91D2661800053C580 /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		5572CF8B1CDDFE78A981F24E /* Pods-quick9.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quick9.release.xcconfig"; path = "Pods/Target Support Files/Pods-quick9/Pods-quick9.release.xcconfig"; sourceTree = "<group>"; };
 		91A375ABB85621E69EEF5584 /* Pods-quick9.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quick9.debug.xcconfig"; path = "Pods/Target Support Files/Pods-quick9/Pods-quick9.debug.xcconfig"; sourceTree = "<group>"; };
 		BA4AE6237D63392A563E3104 /* Pods_quick9.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quick9.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +127,7 @@
 		23A2B67E1D23B8C10053C580 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				23A2B6A91D2661800053C580 /* EventTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				23A2B69B1D23B9EC0053C580 /* Event.swift in Sources */,
 				23A2B6971D23B9D80053C580 /* TimeType.swift in Sources */,
 				23A2B69D1D23B9EC0053C580 /* User.swift in Sources */,
+				23A2B6AA1D2661800053C580 /* EventTableViewCell.swift in Sources */,
 				23A2B68F1D23B9BE0053C580 /* UserSetting.swift in Sources */,
 				23A2B6A01D240D790053C580 /* DataService.swift in Sources */,
 				23A2B6831D23B98D0053C580 /* Test.swift in Sources */,
