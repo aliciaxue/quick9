@@ -27,16 +27,100 @@ class Event {
     private var _minParticipants: Int
     private var _contact: String
     
+    var title: String {
+        get {
+            return _title
+        } set {
+            _title = newValue
+        }
+    }
+    var host: User {
+        get {
+            return _host
+        } set {
+            _host = newValue
+        }
+    }
+    var participants: [User] {
+        get {
+            return _participants
+        } set {
+            _participants = newValue
+        }
+    }
+    var waitingList: [User] {
+        get {
+            return _waitingList
+        } set {
+            _waitingList = newValue
+        }
+    }
+    var invitationList: [User] {
+        get {
+            return _invitationList
+        } set {
+            _invitationList = newValue
+        }
+    }
+    var time: Time {
+        get {
+            return _time
+        } set {
+            _time = newValue
+        }
+    }
+    var location: CLLocation {
+        get {
+            return _location
+        } set {
+            _location = newValue
+        }
+    }
+    var description: String {
+        get {
+            return _description
+        } set {
+            _description = newValue
+        }
+    }
+    var category: Category {
+        get {
+            return _category
+        } set {
+            _category = newValue
+        }
+    }
+    var capacity: Int {
+        get {
+            return _capacity
+        } set {
+            _capacity = newValue
+        }
+    }
+    var minParticipants: Int {
+        get {
+            return _minParticipants
+        } set {
+            _minParticipants = newValue
+        }
+    }
+    var contact: String {
+        get {
+            return _contact
+        } set {
+            _contact = newValue
+        }
+    }
+    
     // MARK: Functions
     
     init(title: String, host: User, participantsExcludingHost: [User]?, waitingList: [User]?, invitationList: [User]?, time: Time, location: CLLocation, description: String, category: Category, capacity: Int?, minParticipants: Int?, contact: String?){
         _title = title
         _host = host
         
-        let participants = participantsExcludingHost ?? [User]()
         _participants = [User]()
         _participants += [_host]
-        _participants += participants
+        _participants += participantsExcludingHost ?? [User]()
         
         _waitingList = waitingList ?? [User]()
         _invitationList = invitationList ?? [User]()
@@ -44,7 +128,7 @@ class Event {
         _location = location
         _description = description
         _category = category
-        _capacity = capacity ?? 9999999
+        _capacity = capacity ?? -1
         _minParticipants = minParticipants ?? 1
         _contact = contact ?? ""
     }
