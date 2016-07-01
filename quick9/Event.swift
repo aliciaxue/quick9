@@ -21,7 +21,7 @@ class Event {
     private var _time: Time
     private var _location: CLLocation // CLGeocoder
     
-    private var _description: String
+    private var _desc: String // description
     private var _category: Category
     private var _capacity: Int
     private var _minParticipants: Int
@@ -76,11 +76,11 @@ class Event {
             _location = newValue
         }
     }
-    var description: String {
+    var desc: String {
         get {
-            return _description
+            return _desc
         } set {
-            _description = newValue
+            _desc = newValue
         }
     }
     var category: Category {
@@ -114,7 +114,7 @@ class Event {
     
     // MARK: Functions
     
-    init(title: String, host: User, participantsExcludingHost: [User]?, waitingList: [User]?, invitationList: [User]?, time: Time, location: CLLocation, description: String, category: Category, capacity: Int?, minParticipants: Int?, contact: String?){
+    init(title: String, host: User, participantsExcludingHost: [User]?, waitingList: [User]?, invitationList: [User]?, time: Time, location: CLLocation, desc: String, category: Category, capacity: Int?, minParticipants: Int?, contact: String?){
         _title = title
         _host = host
         
@@ -126,7 +126,7 @@ class Event {
         _invitationList = invitationList ?? [User]()
         _time = time
         _location = location
-        _description = description
+        _desc = desc
         _category = category
         _capacity = capacity ?? -1
         _minParticipants = minParticipants ?? 1
