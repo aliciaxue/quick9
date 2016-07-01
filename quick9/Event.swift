@@ -18,6 +18,7 @@ class Event {
     private var _waitingList: [User]
     private var _invitationList: [User]
     
+    private var _createTime: Time
     private var _time: Time
     private var _location: CLLocation // CLGeocoder
     
@@ -60,6 +61,13 @@ class Event {
             return _invitationList
         } set {
             _invitationList = newValue
+        }
+    }
+    var createTime: Time {
+        get {
+            return _createTime
+        } set {
+            _createTime = newValue
         }
     }
     var time: Time {
