@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import CoreLocation
+
 class Event {
     // MARK: Properties
     
@@ -18,9 +18,8 @@ class Event {
     private var _waitingList: [User]
     private var _invitationList: [User]
     
-    private var _createTime: Time
     private var _time: Time
-    private var _location: CLLocation // CLGeocoder
+    private var _location: String
     
     private var _desc: String // description
     private var _category: Category
@@ -63,13 +62,6 @@ class Event {
             _invitationList = newValue
         }
     }
-    var createTime: Time {
-        get {
-            return _createTime
-        } set {
-            _createTime = newValue
-        }
-    }
     var time: Time {
         get {
             return _time
@@ -77,7 +69,7 @@ class Event {
             _time = newValue
         }
     }
-    var location: CLLocation {
+    var location: String {
         get {
             return _location
         } set {
@@ -122,7 +114,7 @@ class Event {
     
     // MARK: Functions
     
-    init(title: String, host: User, participantsExcludingHost: [User]?, waitingList: [User]?, invitationList: [User]?, time: Time, location: CLLocation, desc: String, category: Category, capacity: Int?, minParticipants: Int?, contact: String?){
+    init(title: String, host: User, participantsExcludingHost: [User]?, waitingList: [User]?, invitationList: [User]?, time: Time, location: String, desc: String, category: Category, capacity: Int?, minParticipants: Int?, contact: String?){
         _title = title
         _host = host
         
