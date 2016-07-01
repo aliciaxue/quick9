@@ -29,6 +29,7 @@
 		23A2B69C1D23B9EC0053C580 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A2B6991D23B9EC0053C580 /* Time.swift */; };
 		23A2B69D1D23B9EC0053C580 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A2B69A1D23B9EC0053C580 /* User.swift */; };
 		23A2B6A01D240D790053C580 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A2B69F1D240D790053C580 /* DataService.swift */; };
+		23A2B6A61D2660AE0053C580 /* MainEventTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A2B6A51D2660AE0053C580 /* MainEventTableVC.swift */; };
 		92713E87B5AD183D5ED0A503 /* Pods_quick9.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4AE6237D63392A563E3104 /* Pods_quick9.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		23A2B6991D23B9EC0053C580 /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		23A2B69A1D23B9EC0053C580 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		23A2B69F1D240D790053C580 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		23A2B6A51D2660AE0053C580 /* MainEventTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainEventTableVC.swift; sourceTree = "<group>"; };
 		5572CF8B1CDDFE78A981F24E /* Pods-quick9.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quick9.release.xcconfig"; path = "Pods/Target Support Files/Pods-quick9/Pods-quick9.release.xcconfig"; sourceTree = "<group>"; };
 		91A375ABB85621E69EEF5584 /* Pods-quick9.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quick9.debug.xcconfig"; path = "Pods/Target Support Files/Pods-quick9/Pods-quick9.debug.xcconfig"; sourceTree = "<group>"; };
 		BA4AE6237D63392A563E3104 /* Pods_quick9.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quick9.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,7 +101,6 @@
 				23A2B67F1D23B8C60053C580 /* Model */,
 				23A2B67E1D23B8C10053C580 /* View */,
 				23A2B67D1D23B8B90053C580 /* Controller */,
-				23A2B6681D239B510053C580 /* ViewController.swift */,
 				23A2B66A1D239B510053C580 /* Main.storyboard */,
 				23A2B6701D239B510053C580 /* Assets.xcassets */,
 				23A2B6661D239B510053C580 /* AppDelegate.swift */,
@@ -115,6 +116,8 @@
 		23A2B67D1D23B8B90053C580 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				23A2B6A51D2660AE0053C580 /* MainEventTableVC.swift */,
+				23A2B6681D239B510053C580 /* ViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				23A2B6691D239B510053C580 /* ViewController.swift in Sources */,
 				23A2B6671D239B510053C580 /* AppDelegate.swift in Sources */,
 				23A2B6941D23B9D80053C580 /* Category.swift in Sources */,
+				23A2B6A61D2660AE0053C580 /* MainEventTableVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

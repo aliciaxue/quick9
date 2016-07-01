@@ -21,7 +21,7 @@ class UserProfileInfo {
     private var _mobile: String
     private var _email: String
     private var _imageUrl: String
-
+    
     var realName: String {
         get {
             return _realName
@@ -116,5 +116,5 @@ class UserProfileInfo {
         // to modify
         return 0
     }
-
+    
 }
